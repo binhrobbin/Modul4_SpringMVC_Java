@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="/layout :: head">
+    <title>Update Book</title>
+</head>
+<body>
+<h3>Update Book</h3>
+<p>
+    <a th:href="@{/book}">
+        Back to Book library
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/book/update/{id}(id=${book.id})}" th:object="${book}"
+          method="POST" novalidate="novalidate">
+        <div>
+            <label for="firstname">Name</label>
+            <!--            <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>-->
+            <input type="text" id="firstname" th:field="*{name}"/>
+        </div>
+        <div>
+            <label for="lastname">Author</label>
+            <!--            <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>-->
+            <input type="text" id="lastname" th:field="*{author}"/>
+        </div>
+        <div>
+            <label for="age">Quantity</label>
+            <!--            <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span>-->
+            <input type="text" id="age" th:field="*{quantity}"/>
+        </div>
+        <input type="submit" value="Edit"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

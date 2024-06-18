@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e67676d4-d653-4ce5-b2cc-1780270eb83b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/bt1/configuation/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/bt1/configuation/ApplicationInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/bt1/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/bt1/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/bt1/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/bt1/repository/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/bt1/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/bt1/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/java/vn/codegym/th1/configuation/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/java/vn/codegym/th1/configuation/ApplicationInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/java/vn/codegym/th1/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/java/vn/codegym/th1/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/java/vn/codegym/th1/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/java/vn/codegym/th1/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/webapp/WEB-INF/views/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TH1/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/java/vn/codegym/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/java/vn/codegym/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/java/vn/codegym/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/java/vn/codegym/repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/java/vn/codegym/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/java/vn/codegym/service/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/views/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/views/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/views/template.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewThymeleaf/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 4 Data binding/BT1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 4 Data binding/BT1/src/main/webapp/WEB-INF/views/setting2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 4 Data binding/BT2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 4 Data binding/DataBinding/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 5 ORM/TH1/src/main/java/vn/codegym/th1/configuation/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 5 ORM/TH1/src/main/java/vn/codegym/th1/configuation/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/controller/ProvinceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/formatter/ProvinceFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/model/Province.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/repository/IProvinceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/service/IGenerateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/service/IProvinceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/service/Impl/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/java/vn/codegym/service/Impl/ProvinceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/resources/templates/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/resources/templates/customer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/resources/templates/customer/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/resources/templates/error_404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/resources/templates/province/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/resources/templates/province/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/TH1/src/main/resources/templates/province/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/service/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/java/vn/codegym/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/resources/templates/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai 7 Spring boot vs Spring Data JPA/springboot/src/main/resources/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai 4 Data binding/BT1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai 4 Data binding/BT1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai 4 Data binding/BT2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai 4 Data binding/BT2/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="BT1" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2eoSL2EuKyy0QVX80KXgc8DxUgp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.Build BT1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 9.0.86.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/CodeGym_Repository_/Md4_Java_Spring_MVC/Bai 3 Thymeleaf/BT1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeGym_Repository_\Md4_Java_Spring_MVC\Bai 3 Thymeleaf\BT1\src\main\java\vn\codegym\bt1\configuation" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.86" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.86" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : vn.codegym : BT1-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="72dc12c7-cd17-4dd3-abf2-a77583300738" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51827" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : vn.codegym : BT1-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e67676d4-d653-4ce5-b2cc-1780270eb83b" name="Changes" comment="" />
+      <created>1712569379213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712569379213</updated>
+      <workItem from="1712569380347" duration="2461000" />
+      <workItem from="1712578798418" duration="12705000" />
+      <workItem from="1712627480704" duration="8117000" />
+      <workItem from="1712651761753" duration="1918000" />
+      <workItem from="1712765965769" duration="1553000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

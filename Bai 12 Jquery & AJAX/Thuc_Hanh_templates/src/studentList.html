@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.css">
+<!--    <link rel="stylesheet" href="create.html">-->
+<!--    <script type="text/javascript" src="javajs.js"></script>-->
+    <style>
+        table{
+            border: solid black 1px;
+            margin: auto;
+        }
+        body{
+            text-align: center;
+        }
+        td, th {
+            padding: 20px;
+            border-bottom: black solid 1px;
+            border-top-color: black;
+        }
+        /*table tr:nth-child(1){*/
+        /*    background-color:skyblue;*/
+        /*}*/
+        th{
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+<h1>Student List</h1>
+<div id="list-table">
+<table class="col-8" >
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id="tr">
+        <td colspan="3">
+            <div class="spinner-border text-success" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<div id="create-update-form">
+<!--    <h1>Form Create</h1>-->
+<form >
+    <table>
+        <thead>
+        <tr type="hhh">
+            <td><input type="hidden" id="id" ></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" placeholder="name"></td>
+        </tr>
+        <tr>
+            <td><label >Gender:</label></td>
+            <td>
+                <input type="radio" id="1" name="gender" value="1" >Nam&nbsp
+                <input type="radio" id="0" name="gender" value="0">Nữ&nbsp
+                <input type="radio" id="2" name="gender" value="2">Khác&nbsp
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Create" id="add" onclick="saveStudent()"><span id="save"></span></td>
+            <!--            <td><input type="submit" value="Save" id="save" onclick="updateSmartPhone()"></td>-->
+        </tr>
+        </thead>
+    </table>
+</form>
+</div>
+<br>
+<button id="btn-create" class="btn btn-success" onclick="showCreateForm()">Create</button>
+<button id="btn-list" class="btn btn-success" onclick="showList()">Show Student List</button>
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(showList())
+    function showList(){
+        $("#list-table").show()
+        $("#create-update-form").hide()
+        $("#btn-list").hide()
+        $("#btn-create").show()
+        // function init(){
+            setTimeout(function (){
+                $("tbody").empty();
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8080/api/student/v1",
+                    dataType: "json",
+                    success: function (data){
+                        console.log(data)
+                        let tr = []
+                        let gender = "";
+                        for (let i = 0; i < data.length; i++) {
+                            tr.push("<tr>")
+                            tr.push("<td>"+data[i].id+"</td>")
+                            tr.push("<td>"+data[i].name+"</td>")
+                            if (data[i].gender == 1) gender = "nam"
+                            else if (data[i].gender == 0) gender = "nữ"
+                            else gender = "lgbt"
+                            tr.push("<td>"+gender+"</td>")
+                            let id = data[i].id;
+                            // data[`+i+`].id
+                            // tr.push(`<td><a class="btn btn-success" href="create.html" role="button" onclick="showUpdateForm(${data[i].id})">Update</a></td>`)
+                            tr.push(`<td><button class="updateSmartphone" onclick="showUpdateForm(${data[i].id})">Update</button></td>`)
+                            tr.push(`<td><button class="updateSmartphone" onclick="deleteStudent(${data[i].id})">Delete</button></td>`)
+                            tr.push("</tr>")
+                        }
+                        $("tbody").append(tr.join(""))
+                    }
+                })
+            }, 2000)
+        // }
+    // init()
+    }
+    function showCreateForm(){
+        $("h1").text("Form Create")
+        $("#btn-create").hide()
+        $("#btn-list").show()
+        $("#list-table").hide()
+        $("#create-update-form").show()
+        $("#add").show()
+        $("#name").val("")
+        $("#save").hide()
+    }
+    function saveStudent() {
+        let name = $("#name").val()
+        let gender = $("#gender").val()
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:8080/api/student/v1",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                name: name,
+                gender: gender
+            }),
+            success: console.log("Tạo mới thành công")
+        })
+        event.preventDefault();
+    }
+    function showUpdateForm(id){
+        // console.log("vào consolog")
+        $("h1").text("Form Update")
+        $("#btn-create").hide()
+        $("#btn-list").show()
+        $("#list-table").hide()
+        $("#create-update-form").show()
+        $.ajax({
+            type: "Get",
+            url:`http://localhost:8080/api/student/v1/${id}`,
+            success: function (data){
+                $("#id").val(`${data.id}`)
+                $("#name").val(`${data.name}`)
+                if (data.gender == 0) $("#0").prop('checked', true)
+                else if (data.gender == 1) $("#1").prop('checked', true)
+                else $("#2").prop('checked', true)
+                $("#add").hide()
+                $("#save").html(`<input type="submit" value="Save" id="save" onclick="updateStudent(${data.id})">`)
+            }
+        })
+    }
+    function updateStudent(id){
+        let name = $("#name").val()
+        let gender = $("#gender").val()
+        $.ajax({
+            type: "PUT",
+            url: `http://localhost:8080/api/student/v1/${id}`,
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                id: id,
+                name: name,
+                gender: gender
+            }),
+            success: console.log("cập nhật thành công")
+        })
+        event.preventDefault();
+        // showList();
+    }
+    function deleteStudent(id){
+        $.ajax({
+            type: "DELETE",
+            url: `http://localhost:8080/api/student/v1/${id}`,
+            success: showList()
+        })
+    }
+</script>
+</body>
+</html>

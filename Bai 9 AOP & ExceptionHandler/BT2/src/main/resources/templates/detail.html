@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="/layout :: head">
+  <title>Detail Book</title>
+</head>
+<body>
+<h3>Detail Book</h3>
+<p>
+  <a th:href="@{/book}">
+    Back to Book library
+  </a>
+</p>
+<div id="form" th:object="${book}">
+  <form th:action="@{/book/borrow/{id}(id=*{id})}"  method="POST" novalidate="novalidate">
+    <input type="hidden" id="id" th:field="*{id}" readonly/>
+
+    <div>
+      <label for="firstname">Name</label>
+      <!--            <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>-->
+      <input type="text" id="firstname" th:field="*{name}" readonly/>
+    </div>
+    <div>
+      <label for="lastname">Author</label>
+      <!--            <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>-->
+      <input type="text" id="lastname" th:field="*{author}" readonly/>
+    </div>
+    <div>
+      <label for="age">Quantity</label>
+      <!--            <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span>-->
+      <input type="text" id="age" th:field="*{quantity}" readonly/>
+    </div>
+    <input type="submit" value="borrow"/>
+  </form>
+  <form th:action="@{/book/return/{id}(id=*{id})}"  method="POST" novalidate="novalidate">
+    <input type="submit" value="return"/>
+  </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

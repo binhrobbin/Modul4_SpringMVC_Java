@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        th,td {
+            padding: 20px 40px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div align="center" style="margin-top: 5%">
+    <h1 style="color: green">Student list</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th colspan="2">Languages</th>
+    </tr>
+    <tr th:each="student : ${studentList}">
+        <td th:text="*{student.id}"></td>
+        <td th:text="${student.name}"></td>
+        <td th:switch="${student.gender}">
+            <label th:case="0">Nam</label>
+            <label th:case="1">Nu</label>
+            <label th:case="*">LGBT</label>
+        </td>
+        <td th:each="lang : ${student.languages}">
+            <label th:text="${lang}"></label>
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

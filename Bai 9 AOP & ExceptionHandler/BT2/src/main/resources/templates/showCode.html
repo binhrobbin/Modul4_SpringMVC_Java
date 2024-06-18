@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="text-align: center">
+<H1>
+    Mã mượn sách '<span th:text="${message2}"></span>' của bạn là:
+    <div th:if="${message}">
+        <span th:text="${message}"></span>
+    </div>
+</H1>
+<form th:action="@{/book}" method="get" novalidate="novalidate">
+    <input type="submit" value="OK"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        table{
+            margin: auto;
+        }
+        body{
+            text-align: center;
+        }
+        td, th {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<form id="add-smartphone-form">
+    <h1>Form create</h1>
+    <table>
+        <tr>
+            <td><input type="hidden" id="id" ></td>
+        </tr>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" placeholder="name"></td>
+        </tr>
+        <tr>
+            <td><label >Gender:</label></td>
+            <td>
+                <input type="radio" id="0" name="gender" value="0" >Nam&nbsp
+                <input type="radio" name="gender" value="1">Nữ&nbsp
+                <input type="radio" name="gender" value="2">Khác&nbsp
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Create" id="add" class="btn btn-success" onclick="saveStudent()"><span id="save"></span></td>
+            <!--            <td><input type="submit" value="Save" id="save" onclick="updateSmartPhone()"></td>-->
+        </tr>
+    </table>
+</form>
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+    function saveStudent() {
+        let name = $("#name").val()
+        let gender = $("#gender").val()
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:8080/api/student/v1",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                name: name,
+                gender: gender
+            }),
+            success: console.log("Tạo mới thành công")
+        })
+        event.preventDefault();
+    }
+    function showUpdateForm(id){
+        console.log("vào consolog")
+        $("h1").text("Form Update")
+        $.ajax({
+            type: "Get",
+            url:`http://localhost:8080/api/student/v1/${id}`,
+            success: function (data){
+                $("#id").val(`${data.id}`)
+                $("#name").val(`${data.name}`)
+                $("#0").radio()
+                $("#add").hide()
+                $("#save").html(`<input type="submit" value="Save" id="save" onclick="updateSmartPhone(${data.id})">`)
+            }
+        })
+    }
+    function updateSmartPhone(id){
+    }
+</script>
+</body>
+</html>
